@@ -18,8 +18,10 @@ const elements = {
 document.addEventListener("DOMContentLoaded", () => {
     initializeTimeSelects();
     updateCurrentTime();
+    setFontSize();
     setInterval(updateCurrentTime, 1000);
 
+    window.addEventListener("resize", setFontSize);
     elements.startButton.addEventListener("click", startTimer);
     elements.resetButton.addEventListener("click", resetTimer);
     elements.toggleFullscreenButton.addEventListener("click", toggleFullscreen);
@@ -147,4 +149,13 @@ function hideSelectTimeMessage() {
 function closeSelectTimeModal() {
     const modal = bootstrap.Modal.getInstance(elements.selectTimeModal);
     modal.hide();
+}
+
+function setFontSize() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        const cardHeight = card.clientHeight;
+        const fontSize = cardHeight * 0.55;
+        card.querySelector(".card-title").style.fontSize = `${fontSize}px`;
+    });
 }
