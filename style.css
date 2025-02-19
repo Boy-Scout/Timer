@@ -2,6 +2,13 @@
     font-family: 'JetBrains Mono', serif;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #timeUpMessage {
     animation: flash 1s infinite;
 }
