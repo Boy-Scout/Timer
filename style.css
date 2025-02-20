@@ -7,6 +7,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #timeUpMessage {
@@ -23,4 +24,10 @@ main {
     50% {
         opacity: 0;
     }
+}
+
+.btn-xl {
+    height: 65px;
+    width: 65px;
+    font-size: 25px;
 }
