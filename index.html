@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <title>Timer</title>
 
@@ -38,8 +38,8 @@
                         </div>
                     </div>
                     <div class="text-center mb-3">
-                        <button id="startButton" class="btn btn-success">Start</button>
-                        <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button id="startButton" class="btn btn-success btn-lg">&#9205;</button>
+                        <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">&#9932;</button>
                     </div>
                 </div>
             </div>
@@ -83,13 +83,14 @@
             </div>
 
             <div class="text-center">
-                <div class="btn-group mt-2">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#selectTimeModal">
-                        Set Time
-                    </button>
-                    <button id="resetButton" class="btn btn-outline-success">Reset</button>
-                    <button id="toggleFullscreenButton" class="btn btn-success">&#9974;</button>
-                </div>
+                <button id="resetButton" class="btn btn-outline-success rounded-circle">&#10226;</button>
+
+                <button class="btn btn-success btn-lg rounded-circle" data-bs-toggle="modal"
+                    data-bs-target="#selectTimeModal">
+                    &#9201;
+                </button>
+
+                <button id="toggleFullscreenButton" class="btn btn-outline-success rounded-circle">&#9974;</button>
             </div>
         </div>
     </main>

@@ -104,10 +104,8 @@ function updateDisplay(difference) {
 }
 
 function toggleFullscreen() {
-    const timerContainer = document.querySelector("main");
-
     if (!document.fullscreenElement) {
-        enterFullscreen(timerContainer);
+        enterFullscreen(document.documentElement);
     } else {
         exitFullscreen();
     }
