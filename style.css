@@ -2,12 +2,23 @@
     font-family: 'JetBrains Mono', serif;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
-    min-height: 100vh;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 #timeUpMessage {
