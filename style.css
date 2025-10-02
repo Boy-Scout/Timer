@@ -1,0 +1,44 @@
+* {
+    font-family: 'JetBrains Mono', serif;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+#timeUpMessage {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.btn-xl {
+    height: 65px;
+    width: 65px;
+    font-size: 25px;
+}
